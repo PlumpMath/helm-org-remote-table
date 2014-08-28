@@ -79,6 +79,9 @@ the associated source org document."
 
 ;;;###autoload
 (defun helm-org-remote-table ()
+  "Preconfigured `helm' module helping to refer to remote tables
+while writing formulas in org mode. Allows choosing the correct
+table from the Org Formula Editor and inserts its name."
   (interactive)
   (let ((tblname  (helm :sources '(helm-source-org-remote-table))))
     (when tblname
